@@ -1,0 +1,147 @@
+:root {
+  --primary-color: rgb(144, 83, 162);
+  --text-color: #474747;
+  --bg-color: #fff;
+  --card-bg-color: #fff;
+  --card-shadow-color: rgba(144, 83, 162, 0.2);
+  --hover-bg-color: rgba(144, 83, 162, 0.7);
+}
+
+body.dark-mode {
+  --primary-color: rgb(220, 220, 220);
+  --text-color: #e0e0e0;
+  --bg-color: #333;
+  --card-bg-color: #767676;
+  --card-shadow-color: rgba(101, 167, 214, 0.2);
+  /* Azul para sombra no modo escuro */
+  --hover-bg-color: rgba(110, 175, 222, 0.7);
+  /* Azul para hover no modo escuro */
+}
+
+.custom-profile-card {
+  margin: 15px;
+  padding: 10px;
+  box-shadow: 0 4px 8px var(--hover-bg-color);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-profile-card .profile-image {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  padding: 15px;
+  /* margin-right: 30px; */
+}
+
+.custom-profile-card .profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.custom-profile-card .profile-details {
+  flex: 1;
+}
+
+.custom-profile-card .profile-name {
+  font-size: 1.7rem;
+  color: var(--text-color);
+  border-bottom: 0.5px #767676 solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.custom-profile-card .profile-email {
+  font-size: 0.8rem;
+  color: #767676 !important;
+}
+
+.custom-profile-card .status-text {
+  font-size: 0.8rem;
+  color: #767676 !important;
+}
+
+.custom-profile-card .social-media-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.custom-profile-card .social-media-item {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.custom-profile-card .niche-text {
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+
+/* /////////////////////////////////////////////////////////// */
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.campaign-card {
+  margin: 15px;
+  padding: 10px;
+  box-shadow: 0 4px 8px var(--card-shadow-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.campaign-card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.campaign-card .card-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: transparent;
+  margin-bottom: 15px;
+  border-bottom: 0.5px #767676 solid;
+}
+
+.campaign-card .campaign-name {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-weight: bold;
+  text-align: left;
+}
+
+.campaign-card .company-name {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-weight: bold;
+  text-align: right;
+}
+
+.campaign-card .campaign-value {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}

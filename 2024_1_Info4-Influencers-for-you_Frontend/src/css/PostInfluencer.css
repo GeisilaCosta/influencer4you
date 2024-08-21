@@ -1,0 +1,32 @@
+.PostInfluencer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.PostInfluencer-formContainer {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+}
+.PostInfluencer-submitButton {
+    width: 100%;
+    background-color: button-hovered #B6B3E5  #6f42c1;
+    border-color: #B6B3E5;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+.dark-mode .PostInfluencer-formContainer {
+    background-color: #777;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+}

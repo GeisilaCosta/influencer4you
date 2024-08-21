@@ -1,0 +1,110 @@
+@keyframes checkmark {
+    0% {
+        stroke-dashoffset: 60;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes cross {
+    0% {
+        stroke-dashoffset: 100;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.status-modal .modal-content {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.status-modal .checkmark,
+.status-modal .cross {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+}
+
+.status-modal .checkmark__circle {
+    stroke: #66bb6a;
+    stroke-width: 1;
+    fill: none;
+}
+
+.status-modal .checkmark__check {
+    stroke: #66bb6a;
+    stroke-width: 6;
+    fill: none;
+    stroke-dasharray: 60;
+    stroke-dashoffset: 60;
+    animation: checkmark 0.8s ease-in-out forwards;
+}
+
+.status-modal .cross__circle {
+    stroke: #ef5350;
+    stroke-width: 1;
+    fill: none;
+}
+
+.status-modal .cross__cross {
+    stroke: #ef5350;
+    stroke-width: 5;
+    fill: none;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: cross 0.8s ease-in-out forwards;
+}
+
+/* //////////////////////////////////////////////////////////////////////// */
+
+.modal-action-button-container .modal-action-button {
+    background-color: rgba(110, 175, 222, 1) !important;
+    border: none !important;
+    color: white !important;
+    padding: 10px 20px !important;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px !important;
+    margin: 4px 2px !important;
+    cursor: pointer;
+    border-radius: 5px !important;
+    transition-duration: 0.4s;
+}
+
+.modal-action-button-container .modal-action-button:hover {
+    background-color: rgb(76, 132, 172) !important;
+}
+
+/* ----------------------------------DARK-MODE---------------------------------- */
+
+.dark-mode .status-modal .modal-content {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.dark-mode .status-modal .checkmark__circle {
+    stroke: #66bb6a;
+}
+
+.dark-mode .status-modal .cross__circle {
+    stroke: #ef5350;
+}
+
+.dark-mode .modal-action-button-container .modal-action-button {
+    background-color: rgba(110, 175, 222, 1) !important;
+    color: #fff !important;
+}
+
+.dark-mode .modal-action-button-container .modal-action-button:hover {
+    background-color: rgb(76, 132, 172) !important;
+}
